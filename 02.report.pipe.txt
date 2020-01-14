@@ -1,0 +1,30 @@
+Report practical 02 OS
+
+1.		Command:	ls > filelist | grep list
+		Output: 	filelist
+
+2. 		Command: 	wc -l /etc/passwd
+		Output:		110     
+
+3. 		Command: 	vm_stat
+		Output:
+File-backed pages:                       446942.
+Anonymous pages:                        1011026.
+Pages stored in compressor:              836137.
+Pages occupied by compressor:            274780.
+Decompressions:                         6956448.
+Compressions:                          16348174.
+Pageins:                               24262838.
+Pageouts:                                215577.
+Swapins:                                 594761.
+Swapouts:                                714705.
+(cause mac os dont have command "free" so i use "vm_stat" instead)
+
+4. 		Command: 	sysctl -a | grep machdep.cpu | grep count
+		Output: 		
+			machdep.cpu.core_count: 2
+			machdep.cpu.thread_count: 4
+(cause mac os dont have command "cat /proc/cpuinfo" so i use "sysctl -a" and grep with "machdep.cpu" and "count" to display only information about CPU count)
+
+5.		Command:		find . -type f -name "*.jpg" | wc -l 
+		Output: 		854

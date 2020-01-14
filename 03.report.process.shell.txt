@@ -1,0 +1,28 @@
+Report practical 03 OS
+
+1.	Command:	ps -ax  
+	Output:
+PID TTY           TIME CMD
+    1 ??        16:56.82 /sbin/launchd
+   76 ??         0:11.87 /usr/sbin/syslogd
+   77 ??         0:24.69 /usr/libexec/UserEventAgent (System)
+   80 ??         0:01.31 /System/Library/PrivateFrameworks/Uninstall.framework/
+   81 ??         0:03.58 /usr/libexec/kextd
+   82 ??         1:18.81 /System/Library/Frameworks/CoreServices.framework/Vers
+   83 ??         0:14.67 /System/Library/PrivateFrameworks/MediaRemote.framewor
+   86 ??         0:26.88 /usr/sbin/systemstats --daemon
+   87 ??         0:27.32 /usr/libexec/configd
+
+2. 	Command:	open -a Calculator
+	Output : open Calculator app
+
+3. 	Command:	ps -ax | grep Calculator
+	Output:		
+12481 ??         0:00.65 /System/Applications/Calculator.app/Contents/MacOS/Calculator
+12484 ttys000    0:00.00 grep Calculator
+
+4. 	Command:	kill -STOP 12481
+
+5. 	Command:	kill -CONT 12481
+
+6.	Command:	kill -KILL 12481
