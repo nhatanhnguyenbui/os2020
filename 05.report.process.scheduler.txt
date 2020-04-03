@@ -1,0 +1,11 @@
+Practical 5: Het Schduler Information
+
+1. Command: cat /proc/sched_debug | grep systemd
+Since i use mac os so can't run this command.
+
+2. Command: ps -A | grep systemd
+	Output: 98764 ttys001    0:00.00 grep systemd
+   Command: grep switches /proc
+	Since i use mac os so can't run this command.
+
+	
